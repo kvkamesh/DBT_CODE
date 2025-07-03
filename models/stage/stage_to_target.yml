@@ -1,0 +1,13 @@
+version: 2
+sources:
+  - name: stage_to_target_load
+    database: "{{('DBT_DB')}}"
+    schema: STAGING_LAYER
+    tables:
+      - name: STAGE_CUSTOMER_DATA
+      - name: STAGE_ITMES
+      - name: STAGE_ORDER_DATA
+      - name: STAGE_PAYMENTS
+      - name: STAGE_PRODUCT
+      - name: STAGE_STORES
+      - name: STAGE_SUPPLIES
